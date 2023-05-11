@@ -1,25 +1,29 @@
-import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
-import ExploreContainer from '../components/ExploreContainer';
-import './Tab1.css';
-
-const Tab1: React.FC = () => {
+import { IonContent, IonHeader, IonLabel, IonPage, IonSegment, IonSegmentButton, IonTitle, IonToolbar } from '@ionic/react';
+import BlueToothScan from '../components/BluetoothScan/BlueToothScan';
+const Tab1 = () => {
   return (
     <IonPage>
+
       <IonHeader>
         <IonToolbar>
-          <IonTitle>Main Page</IonTitle>
+          <IonTitle>Main Page@</IonTitle>
         </IonToolbar>
       </IonHeader>
-      <IonContent fullscreen>
+      <IonContent>
+        <BlueToothScan />
+      </IonContent>
+
+      {/* <IonContent fullscreen>
         <IonHeader collapse="condense">
           <IonToolbar>
-            <IonTitle size="large">Tab 1</IonTitle>
+            <IonContent>
+              <p>aa</p>
+            </IonContent>
           </IonToolbar>
         </IonHeader>
-        <ExploreContainer name="Tab 1 page" />
-      </IonContent>
+      </IonContent> */}
     </IonPage>
   );
-}; 
+};
 
 export default Tab1;

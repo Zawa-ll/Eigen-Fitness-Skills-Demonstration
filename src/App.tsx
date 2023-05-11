@@ -3,6 +3,7 @@ import {
   IonApp,
   IonIcon,
   IonLabel,
+  IonModal,
   IonRouterOutlet,
   IonTabBar,
   IonTabButton,
@@ -10,7 +11,7 @@ import {
   setupIonicReact
 } from '@ionic/react';
 import { IonReactRouter } from '@ionic/react-router';
-import { addCircle, atCircle, boat, bowlingBall, brush, camera, codeDownload, codeWorking, codeWorkingSharp, ellipse, micCircle, square, star, triangle } from 'ionicons/icons';
+import { bowlingBall, camera, codeWorkingSharp, headset, logIn, male, man, person } from 'ionicons/icons';
 import Tab1 from './pages/Tab1';
 import Tab2 from './pages/Tab2';
 import Tab3 from './pages/Tab3';
@@ -33,6 +34,11 @@ import '@ionic/react/css/display.css';
 
 /* Theme variables */
 import './theme/variables.css';
+import SignIn from './pages/Personal';
+import { sign, Signer } from 'crypto';
+import { userInfo } from 'os';
+import Personal from './pages/Personal';
+
 
 setupIonicReact();
 
@@ -50,10 +56,15 @@ const App: React.FC = () => (
           <Route exact path='/tab3'>
             <Tab3 />
           </Route>
+          <Route exact path='/personal'>
+            <Personal />
+          </Route>
           <Route exact path="/">
             <Redirect to="/tab1" />
           </Route>
         </IonRouterOutlet>
+
+
         <IonTabBar slot="bottom">
           <IonTabButton tab="tab1" href="/tab1">
             <IonIcon icon={bowlingBall} />
@@ -67,10 +78,16 @@ const App: React.FC = () => (
             <IonIcon icon={codeWorkingSharp}></IonIcon>
             <IonLabel>PageName2</IonLabel>
           </IonTabButton>
+          <IonTabButton tab='personal' href='/personal'>
+            <IonIcon icon={person}></IonIcon>
+            <IonLabel>User</IonLabel>
+          </IonTabButton>
         </IonTabBar>
       </IonTabs>
     </IonReactRouter>
+
   </IonApp>
+
 );
 
 export default App;
