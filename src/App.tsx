@@ -38,6 +38,7 @@ import SignIn from './pages/Personal';
 import { sign, Signer } from 'crypto';
 import { userInfo } from 'os';
 import Personal from './pages/Personal';
+import './App.css'
 
 
 setupIonicReact();
@@ -65,24 +66,24 @@ const App: React.FC = () => (
         </IonRouterOutlet>
 
 
-        <IonTabBar slot="bottom">
-          <IonTabButton tab="tab1" href="/tab1">
+        <IonTabBar slot="bottom" className='bar-background'>
+          <IonTabButton tab="tab1" href="/tab1" className='bar-icon'>
             <IonIcon icon={bowlingBall} />
             <IonLabel>Main Page</IonLabel>
           </IonTabButton>
-          <IonTabButton tab="tab2" href="/tab2">
+          <IonTabButton tab="tab2" href="/tab2" className='bar-icon'>
             <IonIcon icon={camera} />
             <IonLabel>PageName1</IonLabel>
           </IonTabButton>
-          <IonTabButton tab="tab3" href="/tab3">
+          <IonTabButton tab="tab3" href="/tab3" className='bar-icon'>
             <IonIcon icon={codeWorkingSharp}></IonIcon>
             <IonLabel>PageName2</IonLabel>
           </IonTabButton>
-          <IonTabButton tab='personal' href='/personal'>
+          <IonTabButton tab='personal' href='/personal' className='bar-icon'>
             <IonIcon icon={person}></IonIcon>
             <IonLabel>User</IonLabel>
           </IonTabButton>
-        </IonTabBar>
+        </IonTabBar >
       </IonTabs>
     </IonReactRouter>
 

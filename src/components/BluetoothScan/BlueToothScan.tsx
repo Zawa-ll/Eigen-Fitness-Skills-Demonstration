@@ -12,10 +12,7 @@ const BlueToothScan = () => {
         <IonContent style={{ '--background': '#000000' }}>
             <IonButton
                 onClick={() => { setClicked(!clicked) }}
-                style={{
-                    'color': iconColor
-                    , '--background': '#5B62FF'
-                }}>
+                style={{ 'color': iconColor }} className='btn-color'>
                 <IonIcon icon={bluetoothOutline} />
             </IonButton>
         </IonContent>
