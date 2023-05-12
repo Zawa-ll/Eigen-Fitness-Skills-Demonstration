@@ -5,6 +5,8 @@ PODS:
     - Capacitor
   - CapacitorCamera (5.0.2):
     - Capacitor
+  - CapacitorCommunityBluetoothLe (3.0.0):
+    - Capacitor
   - CapacitorCordova (5.0.3)
   - CapacitorFilesystem (5.0.2):
     - Capacitor
@@ -24,6 +26,7 @@ DEPENDENCIES:
   - "Capacitor (from `../../node_modules/@capacitor/ios`)"
   - "CapacitorApp (from `../../node_modules/@capacitor/app`)"
   - "CapacitorCamera (from `../../node_modules/@capacitor/camera`)"
+  - "CapacitorCommunityBluetoothLe (from `../../node_modules/@capacitor-community/bluetooth-le`)"
   - "CapacitorCordova (from `../../node_modules/@capacitor/ios`)"
   - "CapacitorFilesystem (from `../../node_modules/@capacitor/filesystem`)"
   - "CapacitorHaptics (from `../../node_modules/@capacitor/haptics`)"
@@ -40,6 +43,8 @@ EXTERNAL SOURCES:
     :path: "../../node_modules/@capacitor/app"
   CapacitorCamera:
     :path: "../../node_modules/@capacitor/camera"
+  CapacitorCommunityBluetoothLe:
+    :path: "../../node_modules/@capacitor-community/bluetooth-le"
   CapacitorCordova:
     :path: "../../node_modules/@capacitor/ios"
   CapacitorFilesystem:
@@ -61,15 +66,16 @@ SPEC CHECKSUMS:
   Capacitor: 304a960e431f9e6f78556554ca71c41c1b2b9680
   CapacitorApp: 28fef1fd75b2b3686e875216806fb8416d421097
   CapacitorCamera: 15face5f9e030e480929a2c989deaaf3eb0d3947
+  CapacitorCommunityBluetoothLe: f2cab9f83b1ac5568c6450f39ad6c8553c64ef16
   CapacitorCordova: def732a63679698df6fb392bbe6d269a0b61e937
   CapacitorFilesystem: 3a7bb944feb5b7e9473adeb08662c73141510aa8
   CapacitorHaptics: 864585542a435bd41eaabf7f30d9ff5ec03024d3
   CapacitorKeyboard: e628d4e66d621c69e449945ebabded17c5b9c2e8
   CapacitorPreferences: 0ad8838944f900284900d9647d9b0145c89ca27d
   CapacitorStatusBar: 48f2899f6846cc7d8431b251ebfc58e1c10e3d58
-  CordovaPlugins: 6de12e52bfceeca7190d106619875d80715b39b5
+  CordovaPlugins: 33108c935e3cb18a193ceb2db5099a969f816bf8
   CordovaPluginsResources: 1b3992e05cb6336d2850cd77dd5e3054f2f76f96
 
-PODFILE CHECKSUM: 21a72eb067abe81b8f95fdb3f5d6c0af7773d13d
+PODFILE CHECKSUM: f0f78eba971a95e20d6849fbacd3580e4c862df3
 
 COCOAPODS: 1.12.1

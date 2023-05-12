@@ -91,10 +91,10 @@ const App = () => {
 
 
           <IonTabBar slot="bottom" className='bar-background'>
-            {/* <IonTabButton tab="tab1" href="/tab1" className='bar-icon'>
-            <IonIcon icon={bowlingBall} />
-            <IonLabel>Main Page</IonLabel>
-          </IonTabButton> */}
+            <IonTabButton tab="tab1" href="/tab1" className='bar-icon'>
+              <IonIcon icon={bowlingBall} />
+              <IonLabel>Main Page</IonLabel>
+            </IonTabButton>
             <IonTabButton tab="tab2" href="/tab2" className='bar-icon'>
               <IonIcon icon={camera} />
               <IonLabel>PageName1</IonLabel>

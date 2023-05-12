@@ -45,5 +45,11 @@
 	</array>
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<true/>
+	<key>NSBluetoothAlwaysUsageDescription</key>
+	<string>Allow this app to use Bluetooth for communicating with nearby devices.</string>
+	<key>UIBackgroundModes</key>
+	<array>
+    	<string>bluetooth-central</string>
+	</array>
 </dict>
 </plist>
