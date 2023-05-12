@@ -6,6 +6,12 @@ const config: CapacitorConfig = {
   webDir: 'build',
   server: {
     androidScheme: 'https'
+  },
+  cordova: {
+    preferences: {
+      bluetooth_restore_state: "true",
+      accessBackgroundLocation: "false",
+    },
   }
 };
 
